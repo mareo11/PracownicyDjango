@@ -1,0 +1,26 @@
+<html>
+   <body>
+   result of addition : {{ msg }}
+    <form action = "/idEdytuj/"  method = "POST" >
+        {% csrf_token %}
+
+        <h3>Numer albumu studenta do edycji</h3>
+        Numer albumu<br>
+        <input type="text" name="numer"/><br>
+        ---------------------------------<br>
+         <h3>Edytuj Dane</h3>
+         Numer albumu<br>
+         <input type = "text" name="id"/><br>
+         Imie<br>
+         <input type = "text" name = "Imię" /><br>
+         Nazwisko<br>
+         <input type="text" name = "Nazwisko" /><br>
+         Miasto<br>
+         <input type = "text" name = "Miasto" /><br>
+         Kod_Pocztowy<br>
+         <input type = "text" name = "Kod_Pocztowy" /><br>
+         <br><input type = "submit" value = "Zmien" /><br>
+    </form>
+   <h3><a href = "\">Wroc do strony domowej</a></h3>
+   </body>
+</html>

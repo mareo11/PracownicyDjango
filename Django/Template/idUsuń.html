@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <meta charset="UTF-8">-->
+    result of addition : {{ msg }}
+
+    <h3>Podaj numer albumu studenta , którego chcesz usunąć:</h3>
+    <form action = "/idUsuń/" method="POST">
+        {% csrf_token %}
+
+         <input type = "text" name="id"/><br>
+         <br><input type = "submit" value = "Usuń" /><br>
+      </form>
+
+     <h3><a href = "\">Wróć do strony domowej</a></h3>
+</head>
+<body>
+
+</body>
+</html>

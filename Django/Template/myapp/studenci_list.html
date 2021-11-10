@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+      <h5>Lista studentów</h5>
+</head>
+<body>
+<table border=1>
+    <thead>
+    <td>Numer_Studenta</td>
+    <td>Imie</td>
+    <td>Nazwisko</td>
+    <td>Miasto</td>
+    <td>Kod Pocztowy</td>
+    {% for student in object_list %}
+    <tr>
+        <td>{{student.idStudent}}</td>
+        <td>{{student.Imię}}</td>
+        <td>{{student.Nazwisko}}</td>
+        <td> {{student.Miasto}}</td>
+        <td>{{student.Kod}}</td>
+        <form action = "/idEdytuj/">
+            <td><input type = "submit" value = "Edytuj" /><br></td>
+        </form>
+        <form action = "/idUsuń/">
+            <td><input type = "submit" value = "Usuń" /><br></td>
+        </form>
+    </tr>
+    {% endfor %}
+    </thead>
+</table>
+ <h3><a href = "\">Wróć do strony domowej</a></h3>
+</body>
+</html>

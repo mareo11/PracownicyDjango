@@ -1,0 +1,29 @@
+<html>
+   <body>
+    <form action = "/dodaj/", method = "POST">
+        {% csrf_token %}
+         result of addition : {{ msg }}
+
+         <h3>Student Information</h3>
+         Numer albumu<br>
+         <input type = "text" name="id"/><br>
+
+         Imie<br>
+         <input type = "text" name = "Imię" /><br>
+
+         Nazwisko<br>
+         <input type="text" name = "Nazwisko" /><br>
+
+         Miasto<br>
+         <input type = "text" name = "Miasto" /><br>
+
+         Kod_Pocztowy<br>
+         <input type = "text" name = "Kod_Pocztowy" /><br>
+
+         <br><input type = "submit" value = "Dodaj" /><br>
+    </form>
+
+   <h3><a href = "\">Wróć do strony domowej</a></h3>
+
+   </body>
+</html>
